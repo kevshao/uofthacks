@@ -1,10 +1,12 @@
-<html> 
+```<html> 
     <head>
         <meta name="viewport" content="width=device-width", intital-scale=1.0>
         <title>bro idek</title>
 
         <link rel = "stylesheet" href="../static/styles/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap" rel = "stylesheet">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
 <body>
     <div class = "container">
@@ -26,33 +28,32 @@
             </div>
         </div>
 
-        <div class = "cardContainer">
-            <div id = "asdasdas" class = "card card1">
-                <h5> Test1 </h5>
-                <p>idk burn amy</p>
-                <p2>burn amy but less</p2>
-            </div>
-            <div class = "card card2">
-                <h5> Test2 </h5>
-                <p>idk burn amy</p>
-                <p2>burn amy but less</p2>
-            </div>
-            <div class = "card card3">
-                <h5> Test3 </h5>
-                <p>idk burn amy</p>
-                <p2>burn amy but less</p2>
-            </div>
-            <div class = "card card4">
-                <h5> Test4 </h5>
-                <p>idk burn amy</p>
-                <p2>burn amy but less</p2>
-            </div>
-            <div class = "card card5">
-                <h5> Test5 </h5>
-                <p>idk burn amy</p>
-                <p2>burn amy but less</p2>
-            </div>
+        <div class = "card card1">
+            <h5> Test1 </h5>
+            <p>idk burn amy</p>
+            <p2>burn amy but less</p2>
         </div>
+        <div class = "card card2">
+            <h5> Test2 </h5>
+            <p>idk burn amy</p>
+            <p2>burn amy but less</p2>
+        </div>
+        <div class = "card card3">
+            <h5> Test3 </h5>
+            <p>idk burn amy</p>
+            <p2>burn amy but less</p2>
+        </div>
+        <div class = "card card4">
+            <h5> Test4 </h5>
+            <p>idk burn amy</p>
+            <p2>burn amy but less</p2>
+        </div>
+        <div class = "card card5">
+            <h5> Test5 </h5>
+            <p>idk burn amy</p>
+            <p2>burn amy but less</p2>
+        </div>
+
     <!--    <button id ="open">
             Click me please
         </button>
@@ -71,8 +72,8 @@
  -->
         <div class = "media"><!--pop up need to go in here-->
             <ul>
-                <li><a href="{{ url_for('auth.forms') }}" target="_self"><i class ="fa fa-plus"></i></a></li> <!--pop up need to go in here inside the href-->
+                <li><a href="{{url_for('auth.forms')}}"target="_blank"><i class="fa fa-plus"></i></a></li> <!--pop up need to go in here inside the href-->
             </ul>
         </div>
 </body>
-</html>
+</html>```

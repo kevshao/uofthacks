@@ -92,6 +92,12 @@ h5{ /*Class for the header of each card*/
     text-shadow: 0 0 15px #000;
 }
 
+.card p2{
+    font-size: 20px;
+    color: azure;
+    text-shadow: 0 0 15px #000;
+}
+
 .card{
     width: 350px;
     height: 350px;
@@ -136,7 +142,7 @@ h5{ /*Class for the header of each card*/
     background:  url('snake.PNG') no-repeat center center/cover; 
 }
 .card9{
-    background:  url('lost.PNG') no-repeat center center/cover; 
+    background:  url('train.PNG') no-repeat center center/cover; 
 }
 
 

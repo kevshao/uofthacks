@@ -1,8 +1,8 @@
 
-from flask import Blueprint, render_template, request, flash
-from .models import Post
+from flask import Blueprint, render_template, request, flash, redirect, url_for
+from .models import Cardpost
 from . import dataBase
-
+import sqlite3
 
 auth = Blueprint('auth', __name__)
 
@@ -27,9 +27,18 @@ def forms():
         elif BusinessType == "Choose":
             flash('choose one of the business types', category = 'noData' )
         else:
-            new_post = Post(BusinessName=BusinessName, Bio=Bio, Addy=Address, Photos=Photos, BusinessType=BusinessType)
+            
+            # Cardpost.createMethod(BusinessName, Bio, Address, Photos, 'errorhere')
+            # kevin = sqlite3.connect('database.db')
+            # sql_insert = "INSERT INTO Cardpost(BusinessName, Bio, Address, Photos, BusinessType) VALUES (%s, %s, %s, %s, %s)"
+            # kevin.execute(sql_insert, Cardpost)
+            # flash('Card succesfully made', category='success')
+            # kevin.close()
+            # new_post = Cardpost(business_name=BusinessName, business_bio=Bio, business_addy=Address, business_photos=Photos, business_type=BusinessType)
+            # dataBase.session.add(new_post)
+            # dataBase.session.commit()
             flash('Card succesfully made', category='success')
-
+            return redirect(url_for('views.home'))
 
     return render_template("form.html", boolean=True)
 

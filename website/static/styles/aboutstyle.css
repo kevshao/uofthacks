@@ -83,12 +83,10 @@ nav ul li a{
     border: 2px solid azure;
 }
 
-.personKev{
-    margin-left: 75%;
-    width: 750px;
-    height: 900px;
-    object-fit: cover;
-    border: 2px solid azure;
+.kevbio{
+   margin-left: 50% ;
+   margin-top: -50%;
+   margin-bottom: 50%;
 }
 
 .ky{

@@ -70,16 +70,37 @@ nav ul li a{
 }
 
 .kev{
-    width: 50%;
+    width: 48%;
     border: 2px solid azure;
 }
 
-.bio{
+.ky{
+    width: 48%;
+    border: 2px solid azure;
+}
+
+.anna{
+    width: 48%;
+    border: 2px solid azure;
+}
+
+.amy{
+    width: 48%;
+    border: 2px solid azure;
+}
+
+.bioLeft{
     padding-top: 50px;
+    padding-bottom: 30px;
     text-align: left;
     
 }
 
+.bioRight{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    text-align: right;
+}
 
 
 h1 {

@@ -69,15 +69,25 @@ nav ul li a{
     color: azure;
 }
 
-.aboutMe{
-    text-align: right;
+.aboutMeRight{
+    padding-left: 50%;
+    text-align: center;
 }
+
 
 .kev{
     width: 750px;
     height: 900px;
     object-fit: cover;
     object-position: 0px -200px;
+    border: 2px solid azure;
+}
+
+.personKev{
+    margin-left: 75%;
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
     border: 2px solid azure;
 }
 
@@ -104,15 +114,16 @@ nav ul li a{
 }
 
 .bioLeft{
-    padding-top: 50px;
-    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50%;
     text-align: left;
     
 }
 
 .bioRight{
-    padding-top: 50px;
-    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     text-align: right;
 }
 

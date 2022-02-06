@@ -5,6 +5,8 @@ dataBase = SQLAlchemy()
 DB_NAME = "database.db"
 
 def create_app():
+    """ base function for creating site"""
+    
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'kevinwasntmutedlol'
     app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
@@ -15,4 +17,10 @@ def create_app():
 
     app.register_blueprint(views, url_prefix='/')
     app.register_blueprint(auth, url_prefix='/')
+
+    from .models import Post
+
     return app
+
+def create_db(app):
+    """ check to make sure the database exists. create if it is not."""

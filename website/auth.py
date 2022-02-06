@@ -10,19 +10,19 @@ def forms():
         BusinessName = request.form.get('BusinessName')
         Bio = request.form.get('Bio')
         Address = request.form.get('Address')
-        # Photos = request.form.get('Photos')
+        Photos = request.form.get('Photos')
         BusinessType = request.form.get('BusinessType')
 
 
         # add business name into the database
         if len(BusinessName) <= 0:
-            flash('enter a business name', category='error')
+            flash('enter a business name', category='noData')
         elif len(Bio) <= 0:
-            flash('say something to you clients!', category='error')
+            flash('say something to you clients!', category='noData')
         elif len(Address) <= 0:
-            flash('enter the location of your business', category='error')
-        elif len(BusinessType) <= 0:
-            flash('choose one of the business types', category = 'success' )
+            flash('enter the location of your business', category='noData')
+        elif BusinessType == "Choose":
+            flash('choose one of the business types', category = 'noData' )
         else:
             flash('Card succesfully made', category='success')
 

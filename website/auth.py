@@ -1,5 +1,7 @@
-from dbus import Bus
 from flask import Blueprint, render_template, request, flash
+from .models import Post
+from . import dataBase
+
 
 auth = Blueprint('auth', __name__)
 
@@ -24,7 +26,9 @@ def forms():
         elif BusinessType == "Choose":
             flash('choose one of the business types', category = 'noData' )
         else:
+            new_post = Post(BusinessName=BusinessName, Bio=Bio, Addy=Address, Photos=Photos, BusinessType=BusinessType)
             flash('Card succesfully made', category='success')
+
 
     return render_template("form.html", boolean=True)
 

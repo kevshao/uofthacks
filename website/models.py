@@ -1,7 +1,6 @@
-from ast import BinOp
-from email.headerregistry import Address
+
 from . import dataBase
-from flask_login import UserMixin
+
 
 # Database model for posts/cards that exist
 

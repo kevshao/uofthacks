@@ -13,8 +13,8 @@
                 <img src="../static/styles/logo.jpeg" class ="logo"> <!-- We add our logo here when we make it -->
                 <nav>
                     <ul>
-                        <li><a href="index.html">GALLERY</a></li>
-                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="{{ url_for('auth.gallery') }}">GALLERY</a></li>
+                        <li><a href="{{ url_for('auth.aboutUs') }}">ABOUT US</a></li>
                     </ul>
                 </nav>
                 <img src = "../static/styles/menu.png" class ="menu-icon"> <!-- Menu Icon is needed -->

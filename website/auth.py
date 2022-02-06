@@ -33,3 +33,8 @@ def forms():
 def aboutUs():
     """Function for"""
     return render_template("aboutus.html", boolean=True)
+
+@auth.route('/gallery')
+def gallery():
+    """Function for"""
+    return render_template("index.html", boolean=True)

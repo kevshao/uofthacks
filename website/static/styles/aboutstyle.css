@@ -63,12 +63,32 @@ nav ul li a{
     flex-basis: 50%;  
 }
 
+.title{
+    border-bottom: 2px solid azure;
+    padding-bottom: 10px;
+    color: azure;
+}
+
+.kev{
+    width: 50%;
+    border: 2px solid azure;
+}
+
+.bio{
+    padding-top: 50px;
+    text-align: left;
+    
+}
+
+
+
 h1 {
-    color: black;
+    color: azure;
     font-size: 100px;
 }
 
 p{
-    color: black;
-    font-size: 15px;
+    color: azure;
+    font-size: 18px;
+    padding-top: 50px;
 }

@@ -81,6 +81,12 @@ nav ul li a{
     border: 2px solid azure;
 }
 
+.kevbio{
+   margin-left: 50% ;
+   margin-top: -50%;
+   margin-bottom: 50%;
+}
+
 .ky{
     width: 750px;
     height: 900px;
@@ -104,8 +110,8 @@ nav ul li a{
 }
 
 .bioLeft{
-    padding-top: 50px;
-    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     text-align: left;
     
 }

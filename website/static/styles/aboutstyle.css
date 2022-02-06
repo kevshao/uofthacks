@@ -63,12 +63,103 @@ nav ul li a{
     flex-basis: 50%;  
 }
 
+.title{
+    border-bottom: 2px solid azure;
+    padding-bottom: 10px;
+    color: azure;
+}
+
+.aboutMeRight{
+    padding-left: 50%;
+    text-align: center;
+}
+
+
+.kev{
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0px -200px;
+    border: 2px solid azure;
+}
+
+.kevbio{
+   margin-left: 50% ;
+   margin-top: -40%;
+   margin-bottom: 30%;
+}
+
+.ky{
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0px -200px;
+    border: 2px solid azure;
+}
+
+.kybio{
+    margin-right: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
+}
+.anna{
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    border: 2px solid azure;
+}
+
+.annabio{
+    margin-left: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
+}
+
+.amy{
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    border: 2px solid azure;
+}
+
+.amybio{
+    margin-right: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
+}
+
+.bioLeft{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 50%;
+    text-align: left;
+    
+}
+
+.bioRight{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+
 h1 {
-    color: black;
+    color: azure;
     font-size: 100px;
 }
 
 p{
-    color: black;
-    font-size: 15px;
+    color: azure;
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+h2{
+    color: azure;
+    font-size: 50px;  
+}
+
+p2{
+    color: azure;
+    font-size: 25px;  
 }

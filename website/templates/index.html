@@ -1,11 +1,12 @@
-<html> 
+```<html> 
     <head>
         <meta name="viewport" content="width=device-width", intital-scale=1.0>
         <title>bro idek</title>
 
         <link rel = "stylesheet" href="../static/styles/style.css">
 
-        <link href="https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap" rel = "stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
 <body>
     <div class = "container">
@@ -23,34 +24,55 @@
         <div class ="row">
             <div class = "col">
                 <h1>SB Gallery</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae consequuntur magnam, hic ipsa eos minima debitis ipsam quia sapiente excepturi sit. Ipsa, consequuntur. Atque officia temporibus ad ea? Eius.</p>
+                    <p>Welcome to SB Gallery! In our efforts to get local businesses back on track, we created this website so that local businesses can post their "business cards" in our gallery. Feel free to scope around and support the small guys!</p>
             </div>
         </div>
 
         <div class = "card card1">
-            <h5> Test1 </h5>
-            <p>idk burn amy</p>
-            <p2>burn amy but less</p2>
+            <h5> Tibet Kitchen </h5>
+            <p>Cuisine: Tibetan and Himalayan</p>
+            <p2>Address: 1544 Queen St. W., Toronto, ON
+                M6R 1A6</p2>
         </div>
         <div class = "card card2">
-            <h5> Test2 </h5>
-            <p>idk burn amy</p>
-            <p2>burn amy but less</p2>
+            <h5> Sugo </h5>
+            <p>Cuisine: Italian-American</p>
+            <p2>Address: 1281 Bloor St. W., Toronto, ON M6H 1N7</p2>
         </div>
         <div class = "card card3">
-            <h5> Test3 </h5>
-            <p>idk burn amy</p>
-            <p2>burn amy but less</p2>
+            <h5> Farm-to-table </h5>
+            <p>Cuisine: Farm-to-table</p>
+            <p2>Address: 216 Ossington Ave., Toronto, ON M6J 2Z9</p2>
         </div>
         <div class = "card card4">
-            <h5> Test4 </h5>
-            <p>idk burn amy</p>
-            <p2>burn amy but less</p2>
+            <h5> Golden Turtle </h5>
+            <p>Cuisine: Vietnamese</p>
+            <p2>Address: 125 Ossington Ave., Toronto, ON M6J 2Z2</p2>
         </div>
         <div class = "card card5">
-            <h5> Test5 </h5>
-            <p>idk burn amy</p>
-            <p2>burn amy but less</p2>
+            <h5> Lost & Found </h5>
+            <p>Store: Clothing store and coffee shop</p>
+            <p2>Address: 44 Ossington Ave, Toronto, ON M6J 2Y7</p2>
+        </div>
+        <div class = "card card6">
+            <h5> Monkey's Paw </h5>
+            <p>Store: A shop specializing in rare books</p>
+            <p2>Address: 1229 Dundas St W, Toronto, ON M6J 1X6</p2>
+        </div>
+        <div class = "card card7">
+            <h5> Revelo Bikes </h5>
+            <p>Store: A builder of better electric bikes</p>
+            <p2>Address: 42 Industrial St #108, East York, ON M4G 1Y9</p2>
+        </div>
+        <div class = "card card8">
+            <h5> Snakes Lattes </h5>
+            <p>Store: A board game cafe and social place</p>
+            <p2>Address: 600 Bloor St W Toronto, ON M6G 1K4</p2>
+        </div>
+        <div class = "card card9">
+            <h5> Steam Whistle </h5>
+            <p>Store: A microbrewery that makes only one kind of beer</p>
+            <p2>Address: 255 Bremner Blvd, Toronto, ON M5V 3M9</p2>
         </div>
 
     <!--    <button id ="open">
@@ -71,8 +93,8 @@
  -->
         <div class = "media"><!--pop up need to go in here-->
             <ul>
-                <li><a href="{{ url_for('auth.forms') }}" target="_self"><i class="fa"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></i></a></li> <!--pop up need to go in here inside the href-->
+                <li><a href="{{url_for('auth.forms')}}"target="_blank"><i class="fa fa-plus"></i></a></li> <!--pop up need to go in here inside the href-->
             </ul>
         </div>
 </body>
-</html>
+</html>```

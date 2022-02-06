@@ -1,5 +1,5 @@
 
-from flask import Blueprint, render_template, request, flash
+from flask import Blueprint, render_template, request, flash, request, url_for
 from .models import Post
 from . import dataBase
 
@@ -28,7 +28,8 @@ def forms():
             flash('choose one of the business types', category = 'noData' )
         else:
             new_post = Post(BusinessName=BusinessName, Bio=Bio, Addy=Address, Photos=Photos, BusinessType=BusinessType)
-            flash('Card succesfully made', category='success')
+            flash('Card succesfully made', category='success') 
+            #return redirect(url_for('views.home'))
 
 
     return render_template("form.html", boolean=True)

@@ -10,7 +10,7 @@ def forms():
         BusinessName = request.form.get('BusinessName')
         Bio = request.form.get('Bio')
         Address = request.form.get('Address')
-        Photos = request.form.get('Photos')
+        # Photos = request.form.get('Photos')
         BusinessType = request.form.get('BusinessType')
 
 
@@ -32,4 +32,4 @@ def forms():
 @auth.route('/aboutUs')
 def aboutUs():
     """Function for"""
-    return "<h2>Aboutus</h2>"
+    return render_template("aboutus.html", boolean=True)

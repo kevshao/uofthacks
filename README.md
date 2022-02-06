@@ -8,3 +8,5 @@ Project Idea:
 Built with:
 HTML
 CSS
+PYTHON
+FLASK

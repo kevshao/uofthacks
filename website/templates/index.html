@@ -13,8 +13,8 @@
             <img src="../static/styles/logo.jpeg" class ="logo"> <!-- We add our logo here when we make it -->
             <nav>
                 <ul>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="{{ url_for('auth.gallery') }}">GALLERY</a></li>
+                    <li><a href="{{ url_for('auth.aboutUs') }}">ABOUT US</a></li>
                 </ul>
             </nav>
             <img src = "../static/styles/menu.png" class ="menu-icon"> <!-- Menu Icon is needed -->
@@ -71,7 +71,7 @@
  -->
         <div class = "media"><!--pop up need to go in here-->
             <ul>
-                <li><a href="{{ url_for('auth.forms') }}" target="_self"><i class="fa fa-plus"></i></a></li> <!--pop up need to go in here inside the href-->
+                <li><a href="{{ url_for('auth.forms') }}" target="_self"><i class="fa"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="plus" class="svg-inline--fa fa-plus fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></i></a></li> <!--pop up need to go in here inside the href-->
             </ul>
         </div>
 </body>

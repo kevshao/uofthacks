@@ -1,3 +1,4 @@
+
 from flask import Blueprint, render_template, request, flash
 from .models import Post
 from . import dataBase
@@ -37,3 +38,8 @@ def forms():
 def aboutUs():
     """Function for"""
     return render_template("aboutus.html", boolean=True)
+
+@auth.route('/gallery')
+def gallery():
+    """Function for"""
+    return render_template("index.html", boolean=True)

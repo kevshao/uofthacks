@@ -16,27 +16,28 @@
         />
     </head>
     <body>
-        <!-- <nav>
-            
-        </nav> -->
-    <!-- {% with messages = get_flashed_messages(with_catagories = true) %}
-    {% if messages %}
-        { %for category, message in messages %}
-            {% if category == 'error' %}
-      <div class = "alert alert-danger alter-dismissable fade show" role = "alert">
-        {{message}}
-        <button type = "button" class ="close" data-dismiss = "alert">
-          <span aria-hidden = "true">&times;</span>
-        </button>
-      </div>
-      {% else %}
-      <div class = "alert alert-success alter-dismissable fade show" role = "alert">
-        {{message}}
-        <button type = "button" class ="close" data-dismiss = "alert">
-          <span aria-hidden = "true">&times;</span>
-        </button>
-      </div>
-        {% endif %} {% endfor %} {% endif %} {% endwith %} -->
+        <nav>
+
+        </nav>
+
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if
+            messages %} {% for category, message in messages %} {% if category ==
+            'noData' %}
+            <div class="alert alert-danger alter-dismissable fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {% else %}
+            <div class="alert alert-success alter-dismissable fade show" role="alert">
+              {{ message }}
+              <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            {% endif %} {% endfor %} {% endif %} {% endwith %}
+
 
         <form method = "POST">
             Business Name: <input type="text" name="BusinessName"><br>
@@ -45,6 +46,7 @@
             Photos: <input type="file" name = "Photos"><br>
             Business Type: <br> <select name = "BusinessType" id = "BusinessType">                    
               <optgroup label="Types">
+                <option value="Choose">Choose One</option>
               <option value="fitness">Fitness</option>
               <option value="pharmaceuticals">Pharmaceuticals</option>
               <option value="jewelry">Jewelry</option>

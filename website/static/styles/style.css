@@ -106,20 +106,33 @@ h5{ /*Class for the header of each card*/
 }
 
 .card1{
-    background:  url('mao.jpg') no-repeat center center/cover;
+    background:  url('Tibet\ Kitchen.PNG') no-repeat center center/cover;
 }
 .card2{
-    background:  url('mao.jpg') no-repeat center center/cover; 
+    background:  url('sugo.PNG') no-repeat center center/cover; 
 }
 .card3{
-    background:  url('mao.jpg') no-repeat center center/cover; 
+    background:  url('seasons.PNG') no-repeat center center/cover; 
 }
 .card4{
-    background:  url('mao.jpg') no-repeat center center/cover; 
+    background:  url('pho.PNG') no-repeat center center/cover; 
 }
 .card5{
-    background:  url('mao.jpg') no-repeat center center/cover; 
+    background:  url('lost.PNG') no-repeat center center/cover; 
 }
+.card6{
+    background:  url('lost.PNG') no-repeat center center/cover; 
+}
+.card7{
+    background:  url('lost.PNG') no-repeat center center/cover; 
+}
+.card8{
+    background:  url('lost.PNG') no-repeat center center/cover; 
+}
+.card9{
+    background:  url('lost.PNG') no-repeat center center/cover; 
+}
+
 
 /*--------------Everything needed for the button to add buinessess--------------*/
 /*

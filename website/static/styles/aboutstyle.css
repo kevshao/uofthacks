@@ -73,6 +73,7 @@ nav ul li a{
     text-align: right;
 }
 
+
 .kev{
     width: 750px;
     height: 900px;
@@ -83,8 +84,8 @@ nav ul li a{
 
 .kevbio{
    margin-left: 50% ;
-   margin-top: -50%;
-   margin-bottom: 50%;
+   margin-top: -40%;
+   margin-bottom: 30%;
 }
 
 .ky{
@@ -95,6 +96,11 @@ nav ul li a{
     border: 2px solid azure;
 }
 
+.kybio{
+    margin-right: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
+}
 .anna{
     width: 750px;
     height: 900px;
@@ -102,11 +108,23 @@ nav ul li a{
     border: 2px solid azure;
 }
 
+.annabio{
+    margin-left: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
+}
+
 .amy{
     width: 750px;
     height: 900px;
     object-fit: cover;
     border: 2px solid azure;
+}
+
+.amybio{
+    margin-right: 50%;
+    margin-top: -40%;
+    margin-bottom: 35%;
 }
 
 .bioLeft{
@@ -130,6 +148,16 @@ h1 {
 
 p{
     color: azure;
-    font-size: 18px;
+    font-size: 25px;
     padding-top: 50px;
+}
+
+h2{
+    color: azure;
+    font-size: 50px;  
+}
+
+p2{
+    color: azure;
+    font-size: 25px;  
 }

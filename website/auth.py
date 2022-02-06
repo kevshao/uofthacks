@@ -1,11 +1,7 @@
 
-<<<<<<< HEAD
 from flask import Blueprint, render_template, request, flash, redirect, url_for
-from .models import Cardpost
-=======
-from flask import Blueprint, render_template, request, flash, request, url_for
-from .models import Post
->>>>>>> 9e8511656f91fce52fe342843fe450297520990e
+# from .models import Cardpost
+
 from . import dataBase
 import sqlite3
 
@@ -32,7 +28,6 @@ def forms():
         elif BusinessType == "Choose":
             flash('choose one of the business types', category = 'noData' )
         else:
-<<<<<<< HEAD
             
             # Cardpost.createMethod(BusinessName, Bio, Address, Photos, 'errorhere')
             # kevin = sqlite3.connect('database.db')

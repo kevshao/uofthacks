@@ -1,6 +1,7 @@
 from flask import Flask 
 from flask_sqlalchemy import SQLAlchemy
 
+
 dataBase = SQLAlchemy()
 DB_NAME = "database.db"
 

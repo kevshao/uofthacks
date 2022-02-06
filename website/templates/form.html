@@ -2,23 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-          crossorigin="anonymous"
-        />
-        <link
-          rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-          crossorigin="anonymous"
-        />
+        <meta name="viewport" content="width=device-width", intital-scale=1.0>
+        <title>bro idek</title>
+
+        <link rel = "stylesheet" href="../static/styles/style.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     </head>
     <body>
-        <nav>
-
-        </nav>
+      <div class = "container">
+        <div class = "navbar">
+            <img src="../static/styles/logo.jpeg" class ="logo"> <!-- We add our logo here when we make it -->
+            <nav>
+                <ul>
+                  <li><a href="{{ url_for('auth.gallery') }}">GALLERY</a></li>
+                  <li><a href="{{ url_for('auth.aboutUs') }}">ABOUT US</a></li>
+                </ul>
+            </nav>
+            <img src = "../static/styles/menu.png" class ="menu-icon"> <!-- Menu Icon is needed -->
+        </div>
 
         {% with messages = get_flashed_messages(with_categories=true) %} {% if
             messages %} {% for category, message in messages %} {% if category ==
@@ -40,10 +43,10 @@
 
 
         <form method = "POST">
-            Business Name: <input type="text" name="BusinessName"><br>
-            Bio: <input type = "text" name = "Bio"><br>
-            Address: <input type = "text" name = "Address"><br>
-            Photos: <input type="file" name = "Photos"><br>
+            Business Name: <br><input type="text" name="BusinessName" placeholder = "business name here"><br>
+            Bio: <br><input type = "text" name = "Bio" placeholder = "Give a little description of your business (Max 150 characters)"><br>
+            Address: <br><input type = "text" name = "Address" placeholder = "(#, Street, City, Postal Code)"><br>
+            Photos: <br><input type="file" name = "Photos"><br>
             Business Type: <br> <select name = "BusinessType" id = "BusinessType">                    
               <optgroup label="Types">
                 <option value="Choose">Choose One</option>
@@ -61,7 +64,7 @@
               <option value="finances/law">Finances/Law</option>
               <option value="other">Other</option>
           </optgroup></select>
-          <input type = "submit">  
+          <input type = "submit" value = "Submit">  
           </form>
         
           

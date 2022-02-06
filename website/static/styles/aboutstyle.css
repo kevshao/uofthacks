@@ -70,22 +70,32 @@ nav ul li a{
 }
 
 .kev{
-    width: 48%;
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0px -200px;
     border: 2px solid azure;
 }
 
 .ky{
-    width: 48%;
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
+    object-position: 0px -200px;
     border: 2px solid azure;
 }
 
 .anna{
-    width: 48%;
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
     border: 2px solid azure;
 }
 
 .amy{
-    width: 48%;
+    width: 750px;
+    height: 900px;
+    object-fit: cover;
     border: 2px solid azure;
 }
 

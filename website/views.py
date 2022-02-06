@@ -1,8 +1,8 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
 views = Blueprint('views', __name__)
 
 # add URL to homepage
 @views.route('/') 
 def home():
-    return "<h1>HomeGallery</h1>"
+    return render_template("index.html", boolean=True)

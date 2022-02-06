@@ -159,8 +159,8 @@ button{
 /*LOGOS FOR SOCIAL MEDIA */
 .media ul {  /*PUTTING LOCATION OF WHERE THE SOCIAL MEDIA SHOULD BE*/
     position:absolute; 
-    top: 60%;
-    left: 50%;
+    top: 95%;
+    left: 95%;
     padding: 0;
     margin: 0;
     transform: translate(-50%,-70%);
